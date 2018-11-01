@@ -10,13 +10,13 @@ import pl.sellingo.koszulkifootball.pages.MainPage;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class MainPageTest extends FundamentalTest {
+public class MainPageTest_VerifyMainMenu extends FundamentalTest {
 
     MainPage mainPage;
 
 
 
-    public MainPageTest(){
+    public MainPageTest_VerifyMainMenu(){
         super();
     }
 
