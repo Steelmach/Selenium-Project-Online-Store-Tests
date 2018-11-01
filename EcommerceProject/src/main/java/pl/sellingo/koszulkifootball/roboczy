@@ -1,0 +1,162 @@
+
+    private static WebDriver driver;
+
+
+    @BeforeClass
+    public static void DriverSetup()
+    {
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Tomasz\\Documents\\Projekt Selenium Sklep Internetowy Git PZ\\Drivers\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("http://koszulkifootball.sellingo.pl/");
+        driver.manage().window().maximize();
+
+    }
+      public  WebDriverWait wait = new WebDriverWait(driver, 5);
+
+
+    @Test
+    public void VerifyPageTitle()  {
+
+
+        String correctTitle = "Koszulkifootball.sellingo.pl";
+        String actualTitle = driver.getTitle().toString();
+        wait.until(ExpectedConditions.titleIs(correctTitle));
+
+        //asercja nadmiarowa, gdyż instrukcja wyżej warunkuje
+        //już wlasciwy tytul przy pozytywnym tescie i negatywny
+        //przy tescie nagatywnym
+        assertEquals(correctTitle,actualTitle);
+
+        System.out.println("Tytuł: " + actualTitle);
+
+
+
+    }
+
+    @Test
+    public void VerifyMainMenuItemsSize(){
+        WebElement mainMenu = wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("MainMenu"))));
+        List<WebElement> mainMenuItems = mainMenu.findElements(By.cssSelector("ul > li"));
+
+        int correctMainMenuItems = 4;
+        int mainMenuItemsSize = mainMenuItems.size();
+
+        assertEquals(correctMainMenuItems,mainMenuItemsSize);
+    }
+
+
+    @Test
+    public void VerifyMainMenuItemsName(){
+
+        ArrayList correctMainMenuItemsNameList = new ArrayList();
+        correctMainMenuItemsNameList.add("Aktualności");
+        correctMainMenuItemsNameList.add("Opinie o sklepie");
+        correctMainMenuItemsNameList.add("Reklamacje");
+        correctMainMenuItemsNameList.add("Kontakt");
+
+        ArrayList actualMainMenuItemsNameList =  new ArrayList();
+
+        WebElement mainMenu = driver.findElement(By.id("MainMenu"));
+        List<WebElement> mainMenuItems = mainMenu.findElements(By.cssSelector("ul > li"));
+
+        int i=0;
+
+        for(WebElement item : mainMenuItems)
+        {
+
+            actualMainMenuItemsNameList.add(item.getText());
+            assertEquals(item.getText(),correctMainMenuItemsNameList.get(i));
+            i++;
+        }
+
+       for(int j=0; j < actualMainMenuItemsNameList.size(); j++)
+       {
+           System.out.println(actualMainMenuItemsNameList.get(j));
+       }
+
+    }
+
+
+    @Test
+    public void VerifyMainMenuItemsNameSort(){
+
+        ArrayList correctMainMenuItemsNameListSort = new ArrayList();
+        correctMainMenuItemsNameListSort.add("Aktualności");
+        correctMainMenuItemsNameListSort.add("Opinie o sklepie");
+        correctMainMenuItemsNameListSort.add("Reklamacje");
+        correctMainMenuItemsNameListSort.add("Kontakt");
+
+        ArrayList actualMainMenuItemsNameList =  new ArrayList();
+
+        WebElement mainMenu = driver.findElement(By.id("MainMenu"));
+        List<WebElement> mainMenuItems = mainMenu.findElements(By.cssSelector("ul > li"));
+
+        int i=0;
+
+        for(WebElement item : mainMenuItems)
+        {
+
+            actualMainMenuItemsNameList.add(item.getText());
+            assertEquals(item.getText(),correctMainMenuItemsNameListSort.get(i));
+            i++;
+        }
+
+        for(int j=0; j < actualMainMenuItemsNameList.size(); j++)
+        {
+            System.out.println(actualMainMenuItemsNameList.get(j));
+        }
+
+    }
+
+    @Test
+    public void VerifyPageTitleAfterClickMainMenuItems() {
+
+
+        ArrayList correctMainMenuItemsNameList = new ArrayList();
+        correctMainMenuItemsNameList.add("Aktualności");
+        correctMainMenuItemsNameList.add("Opinie o sklepie");
+        correctMainMenuItemsNameList.add("Reklamacje");
+        correctMainMenuItemsNameList.add("Kontakt");
+
+
+        ArrayList correctPageTitle = new ArrayList();
+        correctPageTitle.add("Aktualności");
+        correctPageTitle.add("Koszulkifootball.sellingo.pl");
+        correctPageTitle.add("Reklamacje");
+        correctPageTitle.add("Kontakt");
+
+
+        WebElement mainMenu = driver.findElement(By.id("MainMenu"));
+        List<WebElement> mainMenuItems = mainMenu.findElements(By.cssSelector("ul > li > a"));
+
+
+        for (int i = 0; i < mainMenuItems.size(); i++) {
+            mainMenu = driver.findElement(By.id("MainMenu"));
+            mainMenuItems = mainMenu.findElements(By.cssSelector("ul > li > a"));
+
+            if (mainMenuItems.get(i).getText().equals(correctMainMenuItemsNameList.get(i))) {
+
+                mainMenuItems.get(i).click();
+               // System.out.println(driver.getTitle());
+                assertEquals(correctPageTitle.get(i), driver.getTitle());
+
+
+            } else {
+                System.out.println("Błędna nazwa zakładki!");
+            }
+            driver.navigate().back();
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
