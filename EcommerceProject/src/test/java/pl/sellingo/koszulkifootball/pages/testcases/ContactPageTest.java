@@ -14,57 +14,22 @@ public class ContactPageTest extends FundamentalTest {
     ContactPage contactPage;
 
 
-    public ContactPageTest(){
-        super();
-    }
+        public ContactPageTest(){
+            super();
+        }
 
-    @BeforeMethod
-    public void setUp(){
-        initial();
-        mainPage = new MainPage();
-    }
+        @BeforeMethod
+        public void setUp(){
+            initial();
+            mainPage = new MainPage();
+            contactPage = mainPage.clickMainMenuContactLink();
 
+        }
 
     @Test(priority = 0)
     public void verifyPageTitleOnMainPage(){
-        Assert.assertEquals(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
-    }
-
-    @Test(priority = 1)
-    public void verifyMainMenuContactLinkIsDisplay(){
-        Assert.assertTrue(mainPage.mainMenuContactLink(), "ContactLink is not display!");
-    }
-
-    @Test(priority = 2)
-    public void verifyPageTitleOnContactPage(){
-        contactPage = mainPage.clickMainMenuContactLink();
         Assert.assertEquals(contactPage.getPageTitle(),"Kontakt");
-
     }
-
-    @Test(priority = 3)
-    public void verifyPhoneNumber(){
-        contactPage = mainPage.clickMainMenuContactLink();
-        Assert.assertTrue(contactPage.verifyIsDisplayPhone(),"Phone numer is incorrect!");
-    }
-    @Test(priority = 4)
-    public void verifyEmailAddress(){
-        contactPage = mainPage.clickMainMenuContactLink();
-        Assert.assertTrue(contactPage.verifyIsDisplayMail(),"Email is incorrect!");
-    }
-
-    @Test(priority = 5)
-    public void verifyAddress(){
-        contactPage = mainPage.clickMainMenuContactLink();
-        Assert.assertTrue(contactPage.verifyIsDisplayAddress(),"Address is incorrect!");
-    }
-
-    @Test(priority = 6)
-    public void verifyContactFormIsDispaly(){
-        contactPage = mainPage.clickMainMenuContactLink();
-        Assert.assertTrue(contactPage.verifyIsDisplayContactForm(),"Contact Form is not display!");
-    }
-
 
 
     @AfterMethod

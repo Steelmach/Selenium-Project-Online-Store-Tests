@@ -25,6 +25,25 @@ public class MainPage extends FundamentalTest {
     @FindBy(css="menu#MainMenu>ul>li:nth-of-type(4)>a")
     WebElement menuContactLink;
 
+    @FindBy(id="search_query")
+    WebElement search;
+
+    @FindBy(name = "search_box_btn_submit")
+    WebElement searchSubmit;
+
+    @FindBy(css="ul.product-sidebar-big>li")
+    List<WebElement> productsList;
+
+    @FindBy(css="ul.product-sidebar-big>li>a:nth-of-type(2)>h2>span")
+    WebElement productName;
+
+    @FindBy(className = "value")
+    WebElement price;
+
+    @FindBy(css="div.value + span")
+    WebElement currency;
+
+
     //Elements
     public ArrayList correctMainMenuItemsNameList = new ArrayList();
     public ArrayList actualMainMenuItemsNameList =  new ArrayList();
@@ -113,5 +132,33 @@ public class MainPage extends FundamentalTest {
 
     public boolean mainMenuContactLink(){
         return menuContactLink.isDisplayed();
+    }
+
+
+    public boolean searchIsDisplay(){
+        return search.isDisplayed();
+    }
+
+    public void typeForSearchAndSubmit(String text){
+        search.clear();
+        search.sendKeys(text);
+        searchSubmit.click();
+    }
+
+    public int productsOnList(){
+
+        return productsList.size();
+    }
+
+    public String getProductName(){
+        return productName.getText();
+    }
+
+    public String getPrice(){
+        return price.getText();
+    }
+
+    public String getCurrency(){
+        return currency.getText();
     }
 }

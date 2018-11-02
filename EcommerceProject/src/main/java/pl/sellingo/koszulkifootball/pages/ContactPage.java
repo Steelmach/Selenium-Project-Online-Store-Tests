@@ -25,6 +25,8 @@ public class ContactPage extends FundamentalTest {
 
 
 
+
+
     //Elements
     String correctPhone="532417054";
     String correctMail="sklep@koszulkifootball.sellingo.pl";
@@ -64,9 +66,7 @@ public class ContactPage extends FundamentalTest {
         else return false;
     }
 
-    public boolean verifyIsDisplayContactForm(){
-        return contactFormLabel.isDisplayed();
-    }
+
 
 
 
