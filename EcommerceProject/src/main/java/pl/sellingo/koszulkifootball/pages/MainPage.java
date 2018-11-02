@@ -22,16 +22,28 @@ public class MainPage extends FundamentalTest {
     @FindBy(css="#MainMenu>ul>li>a")
     List<WebElement> mainMenuItemsLink;
 
+    @FindBy(css="menu#MainMenu>ul>li:nth-of-type(4)>a")
+    WebElement menuContactLink;
+
+    //Elements
     public ArrayList correctMainMenuItemsNameList = new ArrayList();
     public ArrayList actualMainMenuItemsNameList =  new ArrayList();
     public  ArrayList correctPageTitle = new ArrayList();
     public ArrayList actualMainMenuItemsLinkList =  new ArrayList();
+
+
+
+
+
 
     //Initializing the page object
     public MainPage(){
         PageFactory.initElements(driver,this);
 
     }
+
+
+
 
     //Actions
     public String getTitleOnMainPage()
@@ -91,5 +103,11 @@ public class MainPage extends FundamentalTest {
 
 
         }
+    }
+
+    public ContactPage clickMainMenuContactLink(){
+
+        menuContactLink.click();
+        return new ContactPage();
     }
 }

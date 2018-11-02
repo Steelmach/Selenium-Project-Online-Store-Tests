@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0215413-9a0d-408d-b08a-75305fb72c38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test Results - MainPageTest_VerifyMainMenu_verifyMainMenuItemsName.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/pages/MainPage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,6 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FUSProjectUsageTrigger">
     <session id="2000571959">
       <usages-collector id="statistics.lifecycle.project">
@@ -87,49 +92,82 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="property" value="7" />
+          <entry key="java" value="1102" />
+          <entry key="property" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="JAVA" value="1102" />
+          <entry key="PLAIN_TEXT" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="2" />
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="EcommerceProject" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="291">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="77" column="5" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="77" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#885#886#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#953#954#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,20 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="599">
+              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,17 +188,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/roboczy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="90" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="90" />
+            <state relative-caret-position="755">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#968#969#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,11 +221,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/roboczy" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" />
       </list>
     </option>
   </component>
@@ -211,10 +238,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1772" />
-    <option name="y" value="-423" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="1590" />
+    <option name="y" value="-338" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -222,7 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -235,6 +261,36 @@
               <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="EcommerceProject" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EcommerceProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EcommerceProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EcommerceProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="koszulkifootball" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EcommerceProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="koszulkifootball" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
@@ -257,19 +313,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="testcases" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="EcommerceProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EcommerceProject" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541102829292" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541174091261" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -289,8 +341,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="MainPageTest_VerifyMainMenu" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ContactPageTest">
+    <configuration name="ContactPageTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceProject" />
       <extension name="coverage">
         <pattern>
@@ -299,7 +351,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
-      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyMainMenu" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.ContactPageTest" />
       <properties />
       <listeners />
       <method v="2">
@@ -378,20 +430,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainPageTest_VerifyMainMenu.verifyPageTitleOnMainPage" type="TestNG" factoryName="TestNG" nameIsGenerated="true">
+      <module name="EcommerceProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sellingo.koszulkifootball.pages.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyMainMenu" />
+      <option name="METHOD_NAME" value="verifyPageTitleOnMainPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.MainPageTest_VerifyMainMenu" />
+      <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyPageTitleOnMainPage" />
       <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemsName" />
       <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemsNameoSort" />
       <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemsNumber" />
       <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemTransition" />
+      <item itemvalue="TestNG.ContactPageTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactPageTest" />
         <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemsName" />
         <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemTransition" />
         <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemsNameoSort" />
         <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyMainMenuItemsNumber" />
-        <item itemvalue="TestNG.MainPageTest_VerifyMainMenu" />
       </list>
     </recent_temporary>
   </component>
@@ -409,56 +480,56 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest_verifyMainMenuItemsNumber - 2018.11.01 at 19h 42m 47s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemsNumber" configurationId="TestNG" />
+    <history-entry file="MainPageTest_VerifyMainMenu_verifyMainMenuItemsName - 2018.11.01 at 21h 07m 16s.xml">
+      <configuration name="MainPageTest_VerifyMainMenu.verifyMainMenuItemsName" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemsNumber - 2018.11.01 at 19h 43m 59s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemsNumber" configurationId="TestNG" />
+    <history-entry file="MainPageTest_VerifyMainMenu_verifyPageTitleOnMainPage - 2018.11.01 at 21h 53m 20s.xml">
+      <configuration name="MainPageTest_VerifyMainMenu.verifyPageTitleOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemsName - 2018.11.01 at 19h 51m 22s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemsName" configurationId="TestNG" />
+    <history-entry file="MainPageTest_VerifyMainMenu_verifyPageTitleOnMainPage - 2018.11.02 at 11h 45m 38s.xml">
+      <configuration name="MainPageTest_VerifyMainMenu.verifyPageTitleOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemTransition - 2018.11.01 at 20h 24m 05s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemTransition" configurationId="TestNG" />
+    <history-entry file="MainPageTest_VerifyMainMenu_verifyMainMenuItemsName - 2018.11.02 at 11h 46m 13s.xml">
+      <configuration name="MainPageTest_VerifyMainMenu.verifyMainMenuItemsName" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemsNameoSort - 2018.11.01 at 20h 24m 20s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemsNameoSort" configurationId="TestNG" />
+    <history-entry file="MainPageTest_VerifyMainMenu_verifyPageTitleOnMainPage - 2018.11.02 at 11h 46m 49s.xml">
+      <configuration name="MainPageTest_VerifyMainMenu.verifyPageTitleOnMainPage" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemTransition - 2018.11.01 at 20h 24m 39s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemTransition" configurationId="TestNG" />
+    <history-entry file="ContactPageTest - 2018.11.02 at 16h 28m 46s.xml">
+      <configuration name="ContactPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemTransition - 2018.11.01 at 20h 26m 10s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemTransition" configurationId="TestNG" />
+    <history-entry file="ContactPageTest - 2018.11.02 at 16h 31m 29s.xml">
+      <configuration name="ContactPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemTransition - 2018.11.01 at 20h 27m 18s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemTransition" configurationId="TestNG" />
+    <history-entry file="ContactPageTest - 2018.11.02 at 16h 32m 03s.xml">
+      <configuration name="ContactPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemTransition - 2018.11.01 at 20h 27m 56s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemTransition" configurationId="TestNG" />
+    <history-entry file="ContactPageTest - 2018.11.02 at 16h 32m 32s.xml">
+      <configuration name="ContactPageTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_verifyMainMenuItemsName - 2018.11.01 at 20h 56m 28s.xml">
-      <configuration name="MainPageTest.verifyMainMenuItemsName" configurationId="TestNG" />
+    <history-entry file="ContactPageTest - 2018.11.02 at 16h 33m 01s.xml">
+      <configuration name="ContactPageTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-562" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.21908316" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.21641791" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50161815" side_tool="true" weight="0.21641791" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4088937" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
@@ -471,6 +542,34 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.21908316" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" weight="0.21641791" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50161815" side_tool="true" weight="0.21641791" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4088937" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -488,38 +587,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EcommerceProject.iml" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Test Results - MainPageTest_VerifyMainMenu_verifyMainMenuItemsName.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="17">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/roboczy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="486">
           <caret line="38" column="90" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="90" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="463">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="291">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -528,27 +623,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+        <state relative-caret-position="755">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        <state relative-caret-position="738">
+          <caret line="77" column="5" lean-forward="true" selection-start-line="74" selection-start-column="2" selection-end-line="77" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
           </folding>
         </state>
       </provider>
