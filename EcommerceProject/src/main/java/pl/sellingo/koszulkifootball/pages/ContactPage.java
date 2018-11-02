@@ -8,17 +8,19 @@ import pl.sellingo.koszulkifootball.fundamental.FundamentalTest;
 public class ContactPage extends FundamentalTest {
 
         //WebElements
-        @FindBy(css="div.nice_style>p>span:nth-of-type(2)")
+        @FindBy(className = "phone")
         WebElement phone;
 
-        @FindBy(css="div.nice_style>p>span:nth-of-type(4)")
+        @FindBy(className = "email")
         WebElement mail;
+
+         @FindBy(className = "address")
+         WebElement address;
 
         @FindBy(css="div.form-title")
         WebElement contactFormLabel;
 
-        @FindBy(css="//*[@class='nice_style']//p")
-        WebElement address;
+
 
 
 
@@ -45,7 +47,6 @@ public class ContactPage extends FundamentalTest {
             }
             else return false;
         }
-
 
         public boolean verifyIsDisplayMail() {
 
