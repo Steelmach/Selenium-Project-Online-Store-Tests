@@ -55,7 +55,7 @@ public class MainPage extends FundamentalTest {
 
     public int getMainMenuItemsSize()
     {
-           return mainMenuItems.size();
+        return mainMenuItems.size();
     }
 
 
@@ -109,5 +109,9 @@ public class MainPage extends FundamentalTest {
 
         menuContactLink.click();
         return new ContactPage();
+    }
+
+    public boolean mainMenuContactLink(){
+        return menuContactLink.isDisplayed();
     }
 }
