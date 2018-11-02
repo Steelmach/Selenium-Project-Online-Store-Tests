@@ -110,8 +110,4 @@ public class MainPage extends FundamentalTest {
         menuContactLink.click();
         return new ContactPage();
     }
-
-    public boolean mainMenuContactLink(){
-        return menuContactLink.isDisplayed();
-    }
 }
