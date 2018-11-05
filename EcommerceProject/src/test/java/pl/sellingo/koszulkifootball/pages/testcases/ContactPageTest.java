@@ -27,41 +27,41 @@ public class ContactPageTest extends FundamentalTest {
     }
 
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void verifyPageTitleOnMainPage(){
         assertEquals(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
     }
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void verifyMainMenuContactLinkIsDisplay(){
         assertTrue(mainPage.mainMenuContactLink(), "ContactLink is not display!");
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void verifyPageTitleOnContactPage(){
         contactPage = mainPage.clickMainMenuContactLink();
         assertEquals(contactPage.getPageTitle(),"Kontakt");
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void verifyPhoneNumber(){
         contactPage = mainPage.clickMainMenuContactLink();
         assertTrue(contactPage.verifyIsDisplayPhone(),"Phone numer is incorrect!");
     }
-    @Test(priority = 4)
+    @Test(priority = 5)
     public void verifyEmailAddress(){
         contactPage = mainPage.clickMainMenuContactLink();
         assertTrue(contactPage.verifyIsDisplayMail(),"Email is incorrect!");
     }
 
-    @Test(priority = 5)
+    @Test(priority = 6)
     public void verifyAddress(){
         contactPage = mainPage.clickMainMenuContactLink();
         assertTrue(contactPage.verifyIsDisplayAddress(),"Address is incorrect!");
     }
 
-    @Test(priority = 6)
+    @Test(priority = 7)
     public void verifyContactFormIsDispaly(){
         contactPage = mainPage.clickMainMenuContactLink();
         assertTrue(contactPage.verifyIsDisplayContactForm(),"Contact Form is not display!");

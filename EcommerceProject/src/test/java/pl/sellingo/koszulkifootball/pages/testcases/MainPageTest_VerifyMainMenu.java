@@ -28,19 +28,19 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
     }
 
 
-    @Test(priority = 0)
+    @Test(priority = 1)
     public void verifyPageTitleOnMainPage(){
         Assert.assertEquals(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 2)
     public void verifyMainMenuItemsNumber(){
         Assert.assertEquals(mainPage.getMainMenuItemsSize(),4);
     }
 
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void verifyMainMenuItemsName(){
         mainPage.mainMenuItemsName();
 
@@ -51,7 +51,7 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
     }
 
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void verifyMainMenuItemsNameoSort(){
         mainPage.mainMenuItemsName();
 
@@ -62,7 +62,33 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
     }
 
 
-    @Test(priority = 4)
+    @Test(priority = 5 )
+    public void verifyAttributeValueCss_MainMenuItem_Orginal(){
+        mainPage.mainMenuItemsName();
+        mainPage.getAttributeValueCssOrginal_MainMenuItems();
+
+        for(int i=0; i < mainPage.correctMainMenuItemsNameList.size(); i++){
+
+            assertEquals(mainPage.actualAttributeValueCss_Color.get(i), "rgba(55, 55, 55, 1)");
+            assertEquals(mainPage.actualAttributeValueCss_ColorBackroud.get(i), "rgba(0, 0, 0, 0)");
+        }
+
+    }
+
+    @Test(priority = 6 )
+    public void verifyAttributeValueCss_MainMenuItemAfterHoverMouse(){
+        mainPage.mainMenuItemsName();
+        mainPage.getAttributeValueCssAfterHoverMouse_MainMenuItems();
+        for(int i=0; i < mainPage.correctMainMenuItemsNameList.size(); i++){
+
+            assertEquals(mainPage.actualAttributeValueCss_Color.get(i), "rgba(255, 255, 255, 1)");
+            assertEquals(mainPage.actualAttributeValueCss_ColorBackroud.get(i), "rgba(55, 55, 55, 1)");
+
+        }
+
+    }
+
+    @Test(priority = 7)
     public void verifyMainMenuItemTransition()
     {
         mainPage.mainMenuTransition();
