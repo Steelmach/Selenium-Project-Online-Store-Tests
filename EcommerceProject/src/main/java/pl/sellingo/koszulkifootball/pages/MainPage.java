@@ -1,21 +1,31 @@
 package pl.sellingo.koszulkifootball.pages;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pl.sellingo.koszulkifootball.fundamental.FundamentalTest;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class MainPage extends FundamentalTest {
 
+    WebDriverWait wait;
 
     //WebElements on the page
-    @FindBy(id = "MainMenu")
-    WebElement mainMenu;
 
     @FindBy(css = "#MainMenu>ul>li")
     List<WebElement> mainMenuItems;
@@ -57,13 +67,15 @@ public class MainPage extends FundamentalTest {
     //Initializing the page object
     public MainPage() {
         PageFactory.initElements(driver, this);
+        wait  = new WebDriverWait(driver, 7);
 
     }
 
 
     //Actions
-    public String getTitleOnMainPage() {
-        return driver.getTitle();
+    public boolean getTitleOnMainPage() {
+        return wait.until(ExpectedConditions.titleIs("Koszulkifootball.sellingo.pl"));
+
     }
 
 
@@ -104,6 +116,8 @@ public class MainPage extends FundamentalTest {
 
 
         for (int i = 0; i < mainMenuItemsLink.size(); i++) {
+
+            wait.until(ExpectedConditions.invisibilityOfAllElements(mainMenuItemsLink));
             if (mainMenuItemsLink.get(i).getText().equals(correctMainMenuItemsNameList.get(i))) {
                 mainMenuItemsLink.get(i).click();
                 actualMainMenuItemsLinkList.add(driver.getTitle());
@@ -118,6 +132,7 @@ public class MainPage extends FundamentalTest {
 
     public ContactPage clickMainMenuContactLink() {
 
+        wait.until(ExpectedConditions.elementToBeClickable(menuContactLink));
         menuContactLink.click();
         return new ContactPage();
     }
@@ -176,6 +191,7 @@ public class MainPage extends FundamentalTest {
 
         for (int i = 0; i < mainMenuItemsLink.size(); i++) {
             action.moveToElement(mainMenuItems.get(i)).build().perform();
+            takeScreenshot("Hoover item menu");
             actualAttributeValueCss_Color.add(mainMenuItemsLink.get(i).getCssValue("color"));
             actualAttributeValueCss_ColorBackroud.add(mainMenuItemsLink.get(i).getCssValue("background-color"));
 
@@ -183,5 +199,19 @@ public class MainPage extends FundamentalTest {
             System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
 
         }
+    }
+
+    public void takeScreenshot(String name){
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss_mmm");
+        Date date = new Date();
+        System.out.println(dateFormat.format(date));
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(scrFile, new File("screenshots/"+ name + "_" + dateFormat.format(date)+".jpg"));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

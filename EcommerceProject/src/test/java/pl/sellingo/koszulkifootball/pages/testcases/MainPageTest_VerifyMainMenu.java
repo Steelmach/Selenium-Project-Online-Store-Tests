@@ -30,8 +30,10 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
 
     @Test(priority = 1)
     public void verifyPageTitleOnMainPage(){
-        Assert.assertEquals(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
+        Assert.assertTrue(mainPage.getTitleOnMainPage(),"Tytuł strony  jest nieprawidłowy");
+        mainPage.takeScreenshot("Ekran glowny");
     }
+
 
 
     @Test(priority = 2)

@@ -8,6 +8,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,6 +20,7 @@ public class FundamentalTest {
 
     public static WebDriver driver;
     public static Properties prop;
+
 
     public FundamentalTest() {
 
@@ -56,8 +58,8 @@ public class FundamentalTest {
 
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
-            driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+            // driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+            // for tests driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
             driver.get(urlAddress);
     }
