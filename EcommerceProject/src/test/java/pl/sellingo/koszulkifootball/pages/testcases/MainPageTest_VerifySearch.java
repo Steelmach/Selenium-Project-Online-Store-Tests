@@ -28,7 +28,7 @@ public class MainPageTest_VerifySearch extends FundamentalTest {
 
         @Test(priority = 1)
         public void verifyPageTitle(){
-            assertEquals(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
+            assertTrue(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
         }
 
         @Test(priority = 2)

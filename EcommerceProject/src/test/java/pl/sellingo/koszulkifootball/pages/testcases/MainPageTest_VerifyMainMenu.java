@@ -30,7 +30,7 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
 
     @Test(priority = 1)
     public void verifyPageTitleOnMainPage(){
-        Assert.assertTrue(mainPage.getTitleOnMainPage(),"Tytuł strony  jest nieprawidłowy");
+        Assert.assertTrue(mainPage.getTitleOnMainPage(),"Tytuł strony  jest nieprawidłowy!!");
         mainPage.takeScreenshot("Ekran glowny");
     }
 
@@ -98,6 +98,7 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
             assertEquals(mainPage.actualMainMenuItemsLinkList.get(i), mainPage.correctPageTitle.get(i));
         }
     }
+
 
 
     @AfterMethod

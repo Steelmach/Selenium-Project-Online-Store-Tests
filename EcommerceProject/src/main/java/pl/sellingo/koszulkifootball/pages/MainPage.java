@@ -21,6 +21,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+
 public class MainPage extends FundamentalTest {
 
     WebDriverWait wait;
@@ -74,12 +76,15 @@ public class MainPage extends FundamentalTest {
 
     //Actions
     public boolean getTitleOnMainPage() {
-        return wait.until(ExpectedConditions.titleIs("Koszulkifootball.sellingo.pl"));
+        driver.manage().deleteAllCookies();
+        return wait.until(titleIs("Koszulkifootball.sellingo.pl"));
 
     }
 
 
     public int getMainMenuItemsSize() {
+
+        wait.until(visibilityOfAllElements(mainMenuItems));
         return mainMenuItems.size();
     }
 
@@ -93,6 +98,7 @@ public class MainPage extends FundamentalTest {
 
         int i = 0;
 
+        wait.until(visibilityOfAllElements(mainMenuItems));
         for (WebElement item : mainMenuItems) {
 
             actualMainMenuItemsNameList.add(item.getText());
@@ -114,10 +120,10 @@ public class MainPage extends FundamentalTest {
         correctPageTitle.add("Reklamacje");
         correctPageTitle.add("Kontakt");
 
-
+        wait.until(visibilityOfAllElements(mainMenuItemsLink));
         for (int i = 0; i < mainMenuItemsLink.size(); i++) {
 
-            wait.until(ExpectedConditions.invisibilityOfAllElements(mainMenuItemsLink));
+            wait.until(visibilityOfAllElements(mainMenuItemsLink));
             if (mainMenuItemsLink.get(i).getText().equals(correctMainMenuItemsNameList.get(i))) {
                 mainMenuItemsLink.get(i).click();
                 actualMainMenuItemsLinkList.add(driver.getTitle());
@@ -132,77 +138,83 @@ public class MainPage extends FundamentalTest {
 
     public ContactPage clickMainMenuContactLink() {
 
-        wait.until(ExpectedConditions.elementToBeClickable(menuContactLink));
+        wait.until(elementToBeClickable(menuContactLink));
         menuContactLink.click();
         return new ContactPage();
     }
 
     public boolean mainMenuContactLink() {
+        wait.until(visibilityOf(menuContactLink));
         return menuContactLink.isDisplayed();
     }
 
 
     public boolean searchIsDisplay() {
+        wait.until(visibilityOf(search));
         return search.isDisplayed();
     }
 
     public void typeForSearchAndSubmit(String text) {
+        wait.until(visibilityOf(search));
         search.clear();
         search.sendKeys(text);
+        wait.until(visibilityOf(searchSubmit));
         searchSubmit.click();
     }
 
     public int productsOnList() {
-
+        wait.until(visibilityOfAllElements(productsList));
         return productsList.size();
     }
 
     public String getProductName() {
+        wait.until(visibilityOf(productName));
         return productName.getText();
     }
 
     public String getPrice() {
-        return price.getText();
+        wait.until(visibilityOf(productName));
+            return price.getText();
     }
 
     public String getCurrency() {
+        wait.until(visibilityOf(currency));
         return currency.getText();
     }
 
     public void getAttributeValueCssOrginal_MainMenuItems() {
-
         Actions action = new Actions(driver);
 
+        wait.until(visibilityOfAllElements(mainMenuItemsLink));
         for (int i = 0; i < mainMenuItemsLink.size(); i++) {
             actualAttributeValueCss_Color.add(mainMenuItemsLink.get(i).getCssValue("color"));
             actualAttributeValueCss_ColorBackroud.add(mainMenuItemsLink.get(i).getCssValue("background-color"));
 
-            System.out.println(actualAttributeValueCss_Color.get(i));
-            System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
+          //  System.out.println(actualAttributeValueCss_Color.get(i));
+          //  System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
 
         }
 
     }
 
     public void getAttributeValueCssAfterHoverMouse_MainMenuItems() {
-
-
         Actions action = new Actions(driver);
 
+        wait.until(visibilityOfAllElements(mainMenuItemsLink));
         for (int i = 0; i < mainMenuItemsLink.size(); i++) {
             action.moveToElement(mainMenuItems.get(i)).build().perform();
             takeScreenshot("Hoover item menu");
             actualAttributeValueCss_Color.add(mainMenuItemsLink.get(i).getCssValue("color"));
             actualAttributeValueCss_ColorBackroud.add(mainMenuItemsLink.get(i).getCssValue("background-color"));
 
-            System.out.println(actualAttributeValueCss_Color.get(i));
-            System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
+            // System.out.println(actualAttributeValueCss_Color.get(i));
+            // System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
 
         }
     }
 
     public void takeScreenshot(String name){
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss_mmm");
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss");
         Date date = new Date();
         System.out.println(dateFormat.format(date));
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
