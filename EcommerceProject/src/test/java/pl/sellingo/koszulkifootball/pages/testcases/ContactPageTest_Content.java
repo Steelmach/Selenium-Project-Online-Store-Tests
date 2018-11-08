@@ -10,13 +10,13 @@ import pl.sellingo.koszulkifootball.pages.MainPage;
 
 import static org.testng.Assert.*;
 
-public class ContactPageTest extends FundamentalTest {
+public class ContactPageTest_Content extends FundamentalTest {
 
     MainPage mainPage;
     ContactPage contactPage;
 
 
-    public ContactPageTest(){
+    public ContactPageTest_Content(){
         super();
     }
 
@@ -40,7 +40,7 @@ public class ContactPageTest extends FundamentalTest {
     @Test(priority = 3)
     public void verifyPageTitleOnContactPage(){
         contactPage = mainPage.clickMainMenuContactLink();
-        assertTrue(contactPage.getPageTitleOnContactPage(),"Kontakt");
+        assertEquals(contactPage.getPageTitleOnContactPage(),"Kontakt");
 
     }
 

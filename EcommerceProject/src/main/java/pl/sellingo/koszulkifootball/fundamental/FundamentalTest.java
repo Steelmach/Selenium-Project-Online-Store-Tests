@@ -63,6 +63,8 @@ public class FundamentalTest {
           //for test driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
             driver.get(urlAddress);
+
+            //to jest potrzebne
     }
 
 }

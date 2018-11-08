@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0215413-9a0d-408d-b08a-75305fb72c38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/PolitykaPrywatnosciPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/RegulaminPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ReklamacjePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyFooter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_VerifyContactForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_Content.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/pages/ContactPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/pages/ContactPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/sellingo/koszulkifootball/pages/MainPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test Cases - Excel Files/Scenariusz Testowy - Weryfikacja zakładki kontakt.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Test Cases - Excel Files/Scenariusz Testowy - Weryfikacja zakładki kontakt.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test Cases - Excel Files/Scenariusz Testowy - Weryfikacja zakładki kontakt.xlsx" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -109,15 +101,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="java" value="9778" />
+          <entry key="java" value="11479" />
           <entry key="property" value="13" />
-          <entry key="txt" value="294" />
+          <entry key="txt" value="362" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9778" />
-          <entry key="PLAIN_TEXT" value="328" />
+          <entry key="JAVA" value="11479" />
+          <entry key="PLAIN_TEXT" value="396" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -125,7 +117,7 @@
         <counts>
           <entry key="class" value="10" />
           <entry key="html" value="3" />
-          <entry key="java" value="41" />
+          <entry key="java" value="48" />
           <entry key="jpg" value="20" />
           <entry key="xml" value="1" />
         </counts>
@@ -135,7 +127,7 @@
           <entry key="CLASS" value="10" />
           <entry key="HTML" value="3" />
           <entry key="Image" value="20" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="48" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -147,60 +139,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/RegulaminPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyFooter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2215#2216#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ReklamacjePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="367" column="40" lean-forward="true" selection-start-line="367" selection-start-column="40" selection-end-line="367" selection-end-column="40" />
+            <state relative-caret-position="215">
+              <caret line="176" column="23" selection-start-line="176" selection-start-column="23" selection-end-line="176" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#11665#11666#0" expanded="true" />
@@ -211,28 +153,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/PolitykaPrywatnosciPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_VerifyContactForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="55" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="55" />
+            <state relative-caret-position="254">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+                <element signature="e#1278#1279#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="74" column="52" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
+            <state relative-caret-position="215">
+              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#2427#2428#0" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -269,16 +213,18 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/roboczy" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/config/config.property" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifySearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/RegulaminPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/PolitykaPrywatnosciPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ReklamacjePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyFooter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_Content.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_VerifyContactForm.java" />
       </list>
     </option>
   </component>
@@ -398,7 +344,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541686125973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541698549236" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -418,8 +364,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MainPageTest_VerifyFooter">
-    <configuration name="MainPageTest_VerifyFooter (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ContactPageTest_VerifyContactForm (3)">
+    <configuration name="ContactPageTest_VerifyContactForm (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceProject" />
       <extension name="coverage">
         <pattern>
@@ -428,14 +374,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
-      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyFooter" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.ContactPageTest_VerifyContactForm" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest_VerifyFooter" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactPageTest_VerifyContactForm (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceProject" />
       <extension name="coverage">
         <pattern>
@@ -444,14 +390,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
-      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyFooter" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.ContactPageTest_VerifyContactForm" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactPageTest_VerifyContactForm (3)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceProject" />
       <extension name="coverage">
         <pattern>
@@ -460,8 +406,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
-      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyFooter" />
-      <option name="METHOD_NAME" value="verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.ContactPageTest_VerifyContactForm" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactPageTest_VerifyContactForm.verifyAllElementsFromContactFormIsDispaly" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="EcommerceProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sellingo.koszulkifootball.pages.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.ContactPageTest_VerifyContactForm" />
+      <option name="METHOD_NAME" value="verifyAllElementsFromContactFormIsDispaly" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -469,7 +431,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTest_VerifyFooter.verifyPageTitleAndDeleteCookiesAndTakeScreenshot" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactPageTest_VerifyContactForm.verifyCorrectFillAndSubmitContactForm" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="EcommerceProject" />
       <extension name="coverage">
         <pattern>
@@ -478,26 +440,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
-      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyFooter" />
-      <option name="METHOD_NAME" value="verifyPageTitleAndDeleteCookiesAndTakeScreenshot" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainPageTest_VerifyFooter.verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="EcommerceProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.sellingo.koszulkifootball.pages.testcases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.sellingo.koszulkifootball.pages.testcases" />
-      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.MainPageTest_VerifyFooter" />
-      <option name="METHOD_NAME" value="verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle" />
+      <option name="MAIN_CLASS_NAME" value="pl.sellingo.koszulkifootball.pages.testcases.ContactPageTest_VerifyContactForm" />
+      <option name="METHOD_NAME" value="verifyCorrectFillAndSubmitContactForm" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -525,19 +469,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.MainPageTest_VerifyMainMenu.verifyPageTitleOnMainPage" />
-      <item itemvalue="TestNG.MainPageTest_VerifyFooter.verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle" />
-      <item itemvalue="TestNG.MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" />
-      <item itemvalue="TestNG.MainPageTest_VerifyFooter.verifyPageTitleAndDeleteCookiesAndTakeScreenshot" />
-      <item itemvalue="TestNG.MainPageTest_VerifyFooter" />
-      <item itemvalue="TestNG.MainPageTest_VerifyFooter (1)" />
+      <item itemvalue="TestNG.ContactPageTest_VerifyContactForm (2)" />
+      <item itemvalue="TestNG.ContactPageTest_VerifyContactForm.verifyAllElementsFromContactFormIsDispaly" />
+      <item itemvalue="TestNG.ContactPageTest_VerifyContactForm.verifyCorrectFillAndSubmitContactForm" />
+      <item itemvalue="TestNG.ContactPageTest_VerifyContactForm (1)" />
+      <item itemvalue="TestNG.ContactPageTest_VerifyContactForm (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MainPageTest_VerifyFooter" />
-        <item itemvalue="TestNG.MainPageTest_VerifyFooter (1)" />
-        <item itemvalue="TestNG.MainPageTest_VerifyFooter.verifyPageTitleAndDeleteCookiesAndTakeScreenshot" />
-        <item itemvalue="TestNG.MainPageTest_VerifyFooter.verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle" />
-        <item itemvalue="TestNG.MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" />
+        <item itemvalue="TestNG.ContactPageTest_VerifyContactForm (3)" />
+        <item itemvalue="TestNG.ContactPageTest_VerifyContactForm.verifyAllElementsFromContactFormIsDispaly" />
+        <item itemvalue="TestNG.ContactPageTest_VerifyContactForm (1)" />
+        <item itemvalue="TestNG.ContactPageTest_VerifyContactForm.verifyCorrectFillAndSubmitContactForm" />
+        <item itemvalue="TestNG.ContactPageTest_VerifyContactForm (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -594,39 +538,46 @@
       <option name="project" value="LOCAL" />
       <updated>1541532643574</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="VerifyFooter -  MainPageTest_VerifyFooter - COMPLETE">
+      <created>1541686445914</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541686445914</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTest_VerifyFooter_verifyFirstLinkOnFooterSectionInformacjeAndCheckPageTitle - 2018.11.08 at 12h 47m 44s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionInformacjeAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyContactFormSectionIsDisplay - 2018.11.08 at 17h 16m 35s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyContactFormSectionIsDisplay" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle - 2018.11.08 at 12h 48m 31s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm - 2018.11.08 at 17h 40m 49s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle - 2018.11.08 at 12h 53m 54s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_(2) - 2018.11.08 at 17h 44m 48s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm (2)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle - 2018.11.08 at 12h 56m 48s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyAllElementsFromContactFormIsDispaly - 2018.11.08 at 18h 11m 31s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyAllElementsFromContactFormIsDispaly" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle - 2018.11.08 at 12h 57m 21s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyAllElementsFromContactFormIsDispaly - 2018.11.08 at 18h 12m 02s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyAllElementsFromContactFormIsDispaly" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle - 2018.11.08 at 12h 58m 34s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifyFirstLinkOnFooterSectionPomocAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyAllElementsFromContactFormIsDispaly - 2018.11.08 at 18h 12m 34s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyAllElementsFromContactFormIsDispaly" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle - 2018.11.08 at 14h 38m 23s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifySecondLinkOnFooterSectionInformacjeAndCheckPageTitle" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyCorrectFillAndSubmitContactForm - 2018.11.08 at 18h 28m 07s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyCorrectFillAndSubmitContactForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter_verifyPageTitleAndDeleteCookiesAndTakeScreenshot - 2018.11.08 at 14h 48m 31s.xml">
-      <configuration name="MainPageTest_VerifyFooter.verifyPageTitleAndDeleteCookiesAndTakeScreenshot" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyCorrectFillAndSubmitContactForm - 2018.11.08 at 18h 29m 01s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyCorrectFillAndSubmitContactForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter - 2018.11.08 at 14h 52m 24s.xml">
-      <configuration name="MainPageTest_VerifyFooter" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_verifyCorrectFillAndSubmitContactForm - 2018.11.08 at 18h 29m 20s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm.verifyCorrectFillAndSubmitContactForm" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainPageTest_VerifyFooter - 2018.11.08 at 15h 07m 48s.xml">
-      <configuration name="MainPageTest_VerifyFooter" configurationId="TestNG" />
+    <history-entry file="ContactPageTest_VerifyContactForm_(1) - 2018.11.08 at 18h 30m 09s.xml">
+      <configuration name="ContactPageTest_VerifyContactForm (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -699,7 +650,8 @@
     <MESSAGE value="Tests - attributeValueCss - MainPageTest_VerifyMainMenu" />
     <MESSAGE value="Take shreenshots" />
     <MESSAGE value="Refactor MainPage.class and MainPageTest (wait expected condition)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor MainPage.class and MainPageTest (wait expected condition)" />
+    <MESSAGE value="VerifyFooter -  MainPageTest_VerifyFooter - COMPLETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="VerifyFooter -  MainPageTest_VerifyFooter - COMPLETE" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Properties.java">
@@ -818,16 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screenshots/productLIST_2018-11-06_21_50_19.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -857,38 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="74" column="52" selection-start-line="74" selection-start-column="52" selection-end-line="74" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ReklamacjePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -911,6 +821,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/screenshots/mainPage_screen_2018-11-08_14_48_29.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/RegulaminPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -921,13 +834,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screenshots/mainPage_screen_2018-11-08_14_48_29.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyFooter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="33" column="64" lean-forward="true" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyMainMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/fundamental/FundamentalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/MainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="367" column="40" lean-forward="true" selection-start-line="367" selection-start-column="40" selection-end-line="367" selection-end-column="40" />
+        <state relative-caret-position="215">
+          <caret line="176" column="23" selection-start-line="176" selection-start-column="23" selection-end-line="176" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#11665#11666#0" expanded="true" />
@@ -936,14 +888,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/MainPageTest_VerifyFooter.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sellingo/koszulkifootball/pages/testcases/ContactPageTest_VerifyContactForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state relative-caret-position="254">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2215#2216#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+            <element signature="e#1278#1279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sellingo/koszulkifootball/pages/ContactPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2427#2428#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
           </folding>
         </state>
       </provider>
