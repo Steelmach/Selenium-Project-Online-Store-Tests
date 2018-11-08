@@ -8,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pl.sellingo.koszulkifootball.fundamental.FundamentalTest;
 
@@ -17,18 +16,19 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
+import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class MainPage extends FundamentalTest {
 
     WebDriverWait wait;
 
-    //WebElements on the page
 
+    //WebElements on the page
     @FindBy(css = "#MainMenu>ul>li")
     List<WebElement> mainMenuItems;
 
@@ -56,6 +56,38 @@ public class MainPage extends FundamentalTest {
     @FindBy(css = "div.value + span")
     WebElement currency;
 
+    @FindBy(css = ".container.footer-container")
+    WebElement footer;
+
+    @FindBy(css = ".col-md-3.col-sm-4.rwd-footer h2")
+    List<WebElement> footerSectionNameList;
+
+    @FindBy(className = "phoneNumber")
+    WebElement phoneNumerOnFooter;
+
+    @FindBy(css = ".email > a")
+    WebElement emailOnFooter;
+
+    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(2) ul>li")
+    List<WebElement> listOfItemsOnFooterSectionInformacje;
+
+    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(2) ul>li:first-child a")
+     WebElement regulamiOnFooterSectionInformacjeLink;
+
+    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(2) ul>li:last-child a")
+    WebElement politykaPrywatnosciOnFooterSectionInformacjeLink;
+
+    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(3) ul>li")
+    List<WebElement> listOfReklamacjeOnFooterSectionPomoc;
+
+    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(3) ul>li:first-child a")
+    WebElement reklamacjeOnFooterSectionPomocLink;
+
+
+//    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(3) ul>li:nth-child(1)")
+//    WebElement reklamacjeOnFooterSectionPomocLink;
+
+
 
     //Elements
     public ArrayList correctMainMenuItemsNameList = new ArrayList();
@@ -64,14 +96,20 @@ public class MainPage extends FundamentalTest {
     public ArrayList actualMainMenuItemsLinkList = new ArrayList();
     public ArrayList actualAttributeValueCss_Color = new ArrayList();
     public ArrayList actualAttributeValueCss_ColorBackroud = new ArrayList();
+    public ArrayList actualFooterSectionNameOnMainPage = new ArrayList();
+    public ArrayList correctFooterSectionNameOnMainPage = new ArrayList();
+    public ArrayList correctItemsNameOnFooterSectionInformacje =  new ArrayList();
+    public ArrayList actualItemsNameOnFooterSectionInformacje =  new ArrayList();
 
 
     //Initializing the page object
     public MainPage() {
         PageFactory.initElements(driver, this);
-        wait  = new WebDriverWait(driver, 7);
+        wait = new WebDriverWait(driver, 5);
 
     }
+
+
 
 
     //Actions
@@ -160,6 +198,7 @@ public class MainPage extends FundamentalTest {
         search.sendKeys(text);
         wait.until(visibilityOf(searchSubmit));
         searchSubmit.click();
+        takeScreenshot("productLIST");
     }
 
     public int productsOnList() {
@@ -174,7 +213,7 @@ public class MainPage extends FundamentalTest {
 
     public String getPrice() {
         wait.until(visibilityOf(productName));
-            return price.getText();
+        return price.getText();
     }
 
     public String getCurrency() {
@@ -190,8 +229,8 @@ public class MainPage extends FundamentalTest {
             actualAttributeValueCss_Color.add(mainMenuItemsLink.get(i).getCssValue("color"));
             actualAttributeValueCss_ColorBackroud.add(mainMenuItemsLink.get(i).getCssValue("background-color"));
 
-          //  System.out.println(actualAttributeValueCss_Color.get(i));
-          //  System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
+            //  System.out.println(actualAttributeValueCss_Color.get(i));
+            //  System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
 
         }
 
@@ -213,17 +252,126 @@ public class MainPage extends FundamentalTest {
         }
     }
 
-    public void takeScreenshot(String name){
+    public void takeScreenshot(String name) {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd_HH_mm_ss");
         Date date = new Date();
         System.out.println(dateFormat.format(date));
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(scrFile, new File("screenshots/"+ name + "_" + dateFormat.format(date)+".jpg"));
+            FileUtils.copyFile(scrFile, new File("screenshots/" + name + "_" + dateFormat.format(date) + ".jpg"));
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
-}
+
+
+    public boolean getFooterOnMainPage() {
+        return wait.until(visibilityOf(footer)).isDisplayed();
+    }
+
+
+    public void getFooterList() {
+
+            correctFooterSectionNameOnMainPage.add("Kontakt");
+            correctFooterSectionNameOnMainPage.add("Informacje");
+            correctFooterSectionNameOnMainPage.add("Pomoc");
+
+
+            wait.until(visibilityOfAllElements(footerSectionNameList));
+        for (WebElement item : footerSectionNameList) {
+
+            actualFooterSectionNameOnMainPage.add(item.getText());
+
+        }
+
+/* for test
+
+        for(int i =0; i <actualFooterSectionNameOnMainPage.size(); i ++)
+        {
+            System.out.println(actualAttributeValueCss_ColorBackroud.get(i));
+        }
+*/
+
+        }
+
+
+        public String  getPhoneNumberOnFooterWithSectionKontakt(){
+
+            String phoneNumber = wait.until(visibilityOf(phoneNumerOnFooter)).getText();
+            return  phoneNumber;
+    }
+
+
+
+        public String  getEmailOnFooterWithSectionKontakt(){
+
+            String email = wait.until(visibilityOf(emailOnFooter)).getText();
+            return  email;
+        }
+
+
+        public int getNumberItemsWithFooterSextionInformacje(){
+             int listItemsSize;
+             return  listItemsSize =  wait.until(visibilityOfAllElements(listOfItemsOnFooterSectionInformacje)).size();
+        }
+
+
+        public void getNameItemsOnFooterSectionInformacje(){
+            correctItemsNameOnFooterSectionInformacje.add("Regulamin");
+            correctItemsNameOnFooterSectionInformacje.add("Polityka prywatności");
+
+            for (int i =0; i <listOfItemsOnFooterSectionInformacje.size(); i++){
+
+                actualItemsNameOnFooterSectionInformacje.add(listOfItemsOnFooterSectionInformacje.get(i).getText());
+            }
+
+        }
+
+        public String getFirstLinkOnFooterSectionInformacje(){
+
+            return regulamiOnFooterSectionInformacjeLink.getText();
+        }
+
+        public String getSecondLinkOnFooterSectionInformacje(){
+
+            return politykaPrywatnosciOnFooterSectionInformacjeLink.getText();
+        }
+
+
+         public RegulaminPage clicFirstLinkOnFooterSectionInformacje(){
+            js.executeScript("arguments[0].scrollIntoView();",regulamiOnFooterSectionInformacjeLink );
+            wait.until(elementToBeClickable(regulamiOnFooterSectionInformacjeLink)).click();
+            return new RegulaminPage();
+
+        }
+
+        public PolitykaPrywatnosciPage clicSecondLinkOnFooterSectionInformacje(){
+            js.executeScript("arguments[0].scrollIntoView();",politykaPrywatnosciOnFooterSectionInformacjeLink);
+            wait.until(elementToBeClickable(politykaPrywatnosciOnFooterSectionInformacjeLink)).click();
+            return new PolitykaPrywatnosciPage();
+        }
+
+        public int getNumberItemsOnFooterSectionPomoc(){
+            return  wait.until(visibilityOfAllElements(listOfReklamacjeOnFooterSectionPomoc)).size();
+
+        }
+
+        public String getFirstItemOnFooterSectionPomoc(){
+            return reklamacjeOnFooterSectionPomocLink.getText();
+        }
+
+        public ReklamacjePage clicFirstLinkOnFooterSectionPomoc(){
+            js.executeScript("arguments[0].scrollIntoView();",reklamacjeOnFooterSectionPomocLink);
+            wait.until(visibilityOf(reklamacjeOnFooterSectionPomocLink)).click();
+            return new ReklamacjePage();
+        }
+
+    }
+
+
+
+
+
+

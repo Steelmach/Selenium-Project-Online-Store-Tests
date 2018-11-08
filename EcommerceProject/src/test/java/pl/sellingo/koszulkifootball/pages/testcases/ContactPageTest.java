@@ -29,7 +29,7 @@ public class ContactPageTest extends FundamentalTest {
 
     @Test(priority = 1)
     public void verifyPageTitleOnMainPage(){
-        assertEquals(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
+        assertTrue(mainPage.getTitleOnMainPage(),"Koszulkifootball.sellingo.pl");
     }
 
     @Test(priority = 2)
@@ -40,25 +40,25 @@ public class ContactPageTest extends FundamentalTest {
     @Test(priority = 3)
     public void verifyPageTitleOnContactPage(){
         contactPage = mainPage.clickMainMenuContactLink();
-        assertEquals(contactPage.getPageTitle(),"Kontakt");
+        assertTrue(contactPage.getPageTitleOnContactPage(),"Kontakt");
 
     }
 
     @Test(priority = 4)
     public void verifyPhoneNumber(){
         contactPage = mainPage.clickMainMenuContactLink();
-        assertTrue(contactPage.verifyIsDisplayPhone(),"Phone numer is incorrect!");
+        assertTrue(contactPage.verifyIsDisplayCorrectPhone(),"Phone numer is incorrect!");
     }
     @Test(priority = 5)
     public void verifyEmailAddress(){
         contactPage = mainPage.clickMainMenuContactLink();
-        assertTrue(contactPage.verifyIsDisplayMail(),"Email is incorrect!");
+        assertTrue(contactPage.verifyIsDisplayCorrectMail(),"Email is incorrect!");
     }
 
     @Test(priority = 6)
     public void verifyAddress(){
         contactPage = mainPage.clickMainMenuContactLink();
-        assertTrue(contactPage.verifyIsDisplayAddress(),"Address is incorrect!");
+        assertTrue(contactPage.verifyIsDisplayCorrectAddress(),"Address is incorrect!");
     }
 
     @Test(priority = 7)

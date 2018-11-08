@@ -45,22 +45,16 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
     @Test(priority = 3)
     public void verifyMainMenuItemsName(){
         mainPage.mainMenuItemsName();
+            Assert.assertEquals(mainPage.correctMainMenuItemsNameList,mainPage.actualMainMenuItemsNameList);
 
-        for(int i=0; i<mainPage.getMainMenuItemsSize(); i++)
-        {
-            Assert.assertEquals(mainPage.correctMainMenuItemsNameList.get(i),mainPage.actualMainMenuItemsNameList.get(i));
-        }
     }
 
 
     @Test(priority = 4)
     public void verifyMainMenuItemsNameoSort(){
         mainPage.mainMenuItemsName();
+            Assert.assertEquals(mainPage.correctMainMenuItemsNameList,mainPage.actualMainMenuItemsNameList);
 
-        for(int i=0; i<mainPage.getMainMenuItemsSize(); i++)
-        {
-            Assert.assertEquals(mainPage.correctMainMenuItemsNameList.get(i),mainPage.actualMainMenuItemsNameList.get(i));
-        }
     }
 
 
@@ -94,9 +88,8 @@ public class MainPageTest_VerifyMainMenu extends FundamentalTest {
     public void verifyMainMenuItemTransition()
     {
         mainPage.mainMenuTransition();
-        for(int i = 0; i < mainPage.getMainMenuItemsSize(); i++){
-            assertEquals(mainPage.actualMainMenuItemsLinkList.get(i), mainPage.correctPageTitle.get(i));
-        }
+            assertEquals(mainPage.actualMainMenuItemsLinkList, mainPage.correctPageTitle);
+
     }
 
 

@@ -3,9 +3,16 @@ package pl.sellingo.koszulkifootball.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import pl.sellingo.koszulkifootball.fundamental.FundamentalTest;
 
+import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
+
 public class ContactPage extends FundamentalTest {
+
+
+    WebDriverWait wait;
 
     //WebElements
     @FindBy(className = "phone")
@@ -22,11 +29,6 @@ public class ContactPage extends FundamentalTest {
 
 
 
-
-
-
-
-
     //Elements
     String correctPhone="532417054";
     String correctMail="sklep@koszulkifootball.sellingo.pl";
@@ -34,32 +36,35 @@ public class ContactPage extends FundamentalTest {
 
     //Initializing the page object
     public ContactPage(){
+
         PageFactory.initElements(driver, this);
+        wait  = new WebDriverWait(driver, 5);
     }
 
     //Actions
-    public String getPageTitle(){
-        return driver.getTitle();
+    public Boolean getPageTitleOnContactPage(){
+        driver.manage().deleteAllCookies();
+        return wait.until(titleIs("Kontakt"));
     }
 
-    public boolean verifyIsDisplayPhone() {
-
+    public boolean verifyIsDisplayCorrectPhone() {
+        wait.until(visibilityOf(phone));
         if (phone.getText().equals(correctPhone)) {
             return true;
         }
         else return false;
     }
 
-    public boolean verifyIsDisplayMail() {
-
+    public boolean verifyIsDisplayCorrectMail() {
+        wait.until(visibilityOf(mail));
         if (mail.getText().equals(correctMail)){
             return true;
         }
         else return false;
     }
 
-    public boolean verifyIsDisplayAddress() {
-
+    public boolean verifyIsDisplayCorrectAddress() {
+        wait.until(visibilityOf(address));
         if (address.getText().equals(correctAddress)) {
             return true;
         }
@@ -67,7 +72,8 @@ public class ContactPage extends FundamentalTest {
     }
 
     public boolean verifyIsDisplayContactForm(){
-        return contactFormLabel.isDisplayed();
+        return  wait.until(visibilityOf(contactFormLabel)).isDisplayed();
+
     }
 
 

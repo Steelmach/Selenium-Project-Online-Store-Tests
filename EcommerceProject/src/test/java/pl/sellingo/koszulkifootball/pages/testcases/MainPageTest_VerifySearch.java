@@ -45,7 +45,7 @@ public class MainPageTest_VerifySearch extends FundamentalTest {
         @Test(priority = 4)
         public void verifyProductName(){
             mainPage.typeForSearchAndSubmit("AC Milan");
-            assertEquals(mainPage.getProductName(),"Replika koszulki AC Milan");
+            assertEquals(mainPage.getProductName(),"AC Milan Replika koszulki");
         }
 
         @Test(priority = 5)

@@ -1,5 +1,6 @@
 package pl.sellingo.koszulkifootball.fundamental;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -20,7 +21,7 @@ public class FundamentalTest {
 
     public static WebDriver driver;
     public static Properties prop;
-
+    public static JavascriptExecutor js;
 
     public FundamentalTest() {
 
@@ -55,11 +56,11 @@ public class FundamentalTest {
 
 
 
-
+            js = (JavascriptExecutor) driver;
             driver.manage().window().maximize();
             driver.manage().deleteAllCookies();
-            // driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
-            // for tests driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+          //for test driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
             driver.get(urlAddress);
     }
