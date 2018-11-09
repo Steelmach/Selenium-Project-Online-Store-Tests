@@ -1,7 +1,6 @@
 package pl.sellingo.koszulkifootball.pages;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -18,7 +17,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -83,6 +81,35 @@ public class MainPage extends FundamentalTest {
     @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(3) ul>li:first-child a")
     WebElement reklamacjeOnFooterSectionPomocLink;
 
+    @FindBy(css=".title:nth-of-type(2) > h2")
+    WebElement labelSideMenuKategorie;
+
+    @FindBy(css="#menu_categories>li a")
+    List<WebElement> listOfElementsFromSideMenuKategorie;
+
+    @FindBy(css="#menu_categories>li:nth-of-type(1) a ")
+    WebElement sideMenuKategorieItemKoszulki;
+
+    @FindBy(css="#menu_categories>li:nth-of-type(2) a ")
+    WebElement sideMenuKategorieItemLigaPolska;
+
+    @FindBy(css="#menu_categories>li:nth-of-type(3) a")
+    WebElement sideMenuKategorieItemLigaAngielska;
+
+    @FindBy(css="#menu_categories>li:nth-of-type(4) a")
+    WebElement sideMenuKategorieItemLigaWłoska;
+
+    @FindBy(css="#menu_categories>li:nth-of-type(5) a")
+    WebElement sideMenuKategorieItemLigaHiszpanska;
+
+    @FindBy(css="#menu_categories>li:nth-of-type(6) a")
+    WebElement sideMenuKategorieItemLigaNiemiecka;
+
+    @FindBy(css=".product-sidebar-big > li")
+    List<WebElement> productList;
+
+    @FindBy(css=".product-sidebar-big > li h2 span")
+    List<WebElement> productListName;
 
 //    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(3) ul>li:nth-child(1)")
 //    WebElement reklamacjeOnFooterSectionPomocLink;
@@ -100,6 +127,23 @@ public class MainPage extends FundamentalTest {
     public ArrayList correctFooterSectionNameOnMainPage = new ArrayList();
     public ArrayList correctItemsNameOnFooterSectionInformacje =  new ArrayList();
     public ArrayList actualItemsNameOnFooterSectionInformacje =  new ArrayList();
+    public ArrayList correctItemsNameFormSideMenuategorie = new ArrayList();
+    public ArrayList actualItemsNameFormSideMenuKategorie = new ArrayList();
+    public ArrayList correctNameItemsFromKategoria = new ArrayList();
+    public ArrayList actualNameItemsFromKategoria = new ArrayList();
+
+
+//    public ArrayList correctNameItemsFromKategoriaLigaPolska = new ArrayList();
+//    public ArrayList actualNameItemsFromKategoriaLigaPolska = new ArrayList();
+//    public ArrayList correctNameItemsFromKategoriaLigaAngielska = new ArrayList();
+//    public ArrayList actualNameItemsFromKategoriaLigaAngielska = new ArrayList();
+//    public ArrayList correctNameItemsFromKategoriaLigaWłoska = new ArrayList();
+//    public ArrayList actualNameItemsFromKategoriaLigaWłoska = new ArrayList();
+//    public ArrayList correctNameItemsFromKategoriaLigaHiszpańska = new ArrayList();
+//    public ArrayList actualNameItemsFromKategoriaLigaHiszpańska = new ArrayList();
+//    public ArrayList correctNameItemsFromKategoriaLigaNiemiecka = new ArrayList();
+//    public ArrayList actualNameItemsFromKategoriaLigaNiemiecka = new ArrayList();
+
 
 
     //Initializing the page object
@@ -368,7 +412,178 @@ public class MainPage extends FundamentalTest {
             return new ReklamacjePage();
         }
 
+        public String getSideMenuKategorieLabel(){
+            return wait.until(visibilityOf(labelSideMenuKategorie)).getText();
+        }
+
+
+        public int getNumberItemsFromSideMenuKategorie(){
+
+            return wait.until(visibilityOfAllElements(listOfElementsFromSideMenuKategorie)).size();
+        }
+
+        public void getNameItemsFormSideMenuKategorieAndSortThem(){
+            correctItemsNameFormSideMenuategorie.add("Koszulki");
+            correctItemsNameFormSideMenuategorie.add("Liga Polska");
+            correctItemsNameFormSideMenuategorie.add("Liga Angielska");
+            correctItemsNameFormSideMenuategorie.add("Liga Włoska");
+            correctItemsNameFormSideMenuategorie.add("Liga Hiszpańska");
+            correctItemsNameFormSideMenuategorie.add("Liga Niemiecka");
+
+
+
+            for(int i = 0; i < correctItemsNameFormSideMenuategorie.size(); i++){
+                actualItemsNameFormSideMenuKategorie.add(listOfElementsFromSideMenuKategorie.get(i).getText());
+
+            }
+        }
+
+        public int clickItemKoszulkiFromSideMenuKategorieAndCheckProductsNumber(String nameItemFromSideMenuKategorie){
+
+            wait.until(visibilityOfAllElements(listOfElementsFromSideMenuKategorie));
+
+            if(nameItemFromSideMenuKategorie.equals("Koszulki")) {
+                sideMenuKategorieItemKoszulki.click();
+            }
+            else if(nameItemFromSideMenuKategorie.equals("Liga Polska")){
+                sideMenuKategorieItemLigaPolska.click();
+            }
+            else if(nameItemFromSideMenuKategorie.equals("Liga Angielska")){
+                sideMenuKategorieItemLigaAngielska.click();
+            }
+            else if(nameItemFromSideMenuKategorie.equals("Liga Włoska")){
+                sideMenuKategorieItemLigaWłoska.click();
+            }
+            else if(nameItemFromSideMenuKategorie.equals("Liga Hiszpańska")){
+                sideMenuKategorieItemLigaHiszpanska.click();
+            }
+            else if(nameItemFromSideMenuKategorie.equals("Liga Niemiecka")){
+                sideMenuKategorieItemLigaNiemiecka.click();
+            }
+
+            wait.until(titleIs("Oferta"));
+            int productsNumber =  wait.until(visibilityOfAllElements(productsList)).size();
+
+            return productsNumber;
+        }
+
+
+        public void getNameItemsFromSideMenuKategorie(String nameItemsFromSideMenuKategorie) {
+
+            wait.until(visibilityOfAllElements(listOfElementsFromSideMenuKategorie));
+
+            if (nameItemsFromSideMenuKategorie.equals("Koszulki")) {
+                correctNameItemsFromKategoria.add("AC Milan Replika koszulki");
+                correctNameItemsFromKategoria.add("Arsenal Londyn Replika koszulki");
+                correctNameItemsFromKategoria.add("Bayern Monachium Replika koszulki");
+                correctNameItemsFromKategoria.add("Chelsea Londyn Replika koszulki");
+                correctNameItemsFromKategoria.add("Cracovia Kraków Replika koszulki");
+                correctNameItemsFromKategoria.add("FC Barcelona Replika koszulki");
+                correctNameItemsFromKategoria.add("FC Liverpool Replika koszulki");
+                correctNameItemsFromKategoria.add("Juventus Turyn Replika koszulki");
+                correctNameItemsFromKategoria.add("Lechia Gdańsk Replika koszulki");
+                correctNameItemsFromKategoria.add("Legia Warszawa Replika koszulki");
+                correctNameItemsFromKategoria.add("Manchester United Replika koszulki");
+                correctNameItemsFromKategoria.add("Real Madryt Replika koszulki");
+
+                sideMenuKategorieItemKoszulki.click();
+                wait.until(titleIs("Oferta"));
+                wait.until(visibilityOfAllElements(productsList));
+                for (int i = 0; i < productsList.size(); i++) {
+                    actualNameItemsFromKategoria.add(productListName.get(i).getText());
+                }
+            }
+            if(nameItemsFromSideMenuKategorie.equals("Liga Polska")){
+                correctNameItemsFromKategoria.add("Cracovia Kraków Replika koszulki");
+                correctNameItemsFromKategoria.add("Lechia Gdańsk Replika koszulki");
+                correctNameItemsFromKategoria.add("Legia Warszawa Replika koszulki");
+
+
+                sideMenuKategorieItemLigaPolska.click();
+                wait.until(titleIs("Oferta"));
+                wait.until(visibilityOfAllElements(productsList));
+                for (int i = 0; i < productsList.size(); i++) {
+                    actualNameItemsFromKategoria.add(productListName.get(i).getText());
+                }
+
+            }
+            if(nameItemsFromSideMenuKategorie.equals("Liga Angielska")){
+                correctNameItemsFromKategoria.add("Arsenal Londyn Replika koszulki");
+                correctNameItemsFromKategoria.add("Chelsea Londyn Replika koszulki");
+                correctNameItemsFromKategoria.add("FC Liverpool Replika koszulki");
+                correctNameItemsFromKategoria.add("Manchester United Replika koszulki");
+
+                sideMenuKategorieItemLigaAngielska.click();
+                wait.until(titleIs("Oferta"));
+                wait.until(visibilityOfAllElements(productsList));
+                for (int i = 0; i < productsList.size(); i++) {
+                    actualNameItemsFromKategoria.add(productListName.get(i).getText());
+                }
+
+            }
+            if(nameItemsFromSideMenuKategorie.equals("Liga Włoska")){
+                correctNameItemsFromKategoria.add("AC Milan Replika koszulki");
+                correctNameItemsFromKategoria.add("Juventus Turyn Replika koszulki");
+
+                sideMenuKategorieItemLigaWłoska.click();
+                wait.until(titleIs("Oferta"));
+                wait.until(visibilityOfAllElements(productsList));
+                for (int i = 0; i < productsList.size(); i++) {
+                    actualNameItemsFromKategoria.add(productListName.get(i).getText());
+                }
+
+            }
+            if(nameItemsFromSideMenuKategorie.equals("Liga Hiszpańska")){
+                correctNameItemsFromKategoria.add("FC Barcelona Replika koszulki");
+                correctNameItemsFromKategoria.add("Real Madryt Replika koszulki");
+
+                sideMenuKategorieItemLigaHiszpanska.click();
+                wait.until(titleIs("Oferta"));
+                wait.until(visibilityOfAllElements(productsList));
+                for (int i = 0; i < productsList.size(); i++) {
+                    actualNameItemsFromKategoria.add(productListName.get(i).getText());
+                }
+
+            }
+            if(nameItemsFromSideMenuKategorie.equals("Liga Niemiecka")){
+                correctNameItemsFromKategoria.add("Bayern Monachium Replika koszulki");
+
+
+                sideMenuKategorieItemLigaNiemiecka.click();
+                wait.until(titleIs("Oferta"));
+                wait.until(visibilityOfAllElements(productsList));
+                for (int i = 0; i < productsList.size(); i++) {
+                    actualNameItemsFromKategoria.add(productListName.get(i).getText());
+                }
+
+            }
     }
+
+            public boolean clickItemsFromSideMenuKategorieAndGetColorValue() {
+                String correctColorValue = "rgba(255, 89, 0, 1)";
+                String colorValue;
+                boolean flag = true;
+
+                wait.until(visibilityOfAllElements(listOfElementsFromSideMenuKategorie));
+                for (int i = 0; i < listOfElementsFromSideMenuKategorie.size(); i++) {
+                    listOfElementsFromSideMenuKategorie.get(i).click();
+                    colorValue = listOfElementsFromSideMenuKategorie.get(i).getCssValue("color");
+
+                    if (colorValue.equals(correctColorValue)) {
+                        flag = true;
+
+                    } else {
+                        flag = false;
+                        System.out.println("Błędny kolor dla zakładki: " + listOfElementsFromSideMenuKategorie.get(i).getText());
+                        System.out.println("Otrzymany kolor zakładki to: " + colorValue + ", poprawny kolor to: " + correctColorValue  );
+                        break;
+                    }                }
+
+                return flag;
+            }
+}
+
+
 
 
 
