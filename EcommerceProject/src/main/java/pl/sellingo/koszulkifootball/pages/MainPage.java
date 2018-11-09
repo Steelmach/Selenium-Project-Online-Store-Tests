@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static java.lang.Integer.*;
 import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
@@ -110,6 +111,30 @@ public class MainPage extends FundamentalTest {
 
     @FindBy(css=".product-sidebar-big > li h2 span")
     List<WebElement> productListName;
+
+    @FindBy(css=".header-1 > a:nth-of-type(3) img")
+    WebElement logo;
+
+    @FindBy(css=".contact-box.pull-right > p")
+    WebElement phoneNumberInHeader;
+
+    @FindBy(css=".contact-box.pull-right > a")
+    WebElement emailInHeader;
+
+    @FindBy(className = "cart_count")
+    WebElement numberProductsInBasket;
+
+    @FindBy(className = "cart_sum")
+    WebElement amountInBasket;
+
+    @FindBy(css=".b-2.t2 > a>span:nth-of-type(2)")
+    WebElement currencyInBasket;
+
+    @FindBy(css=".b-3.t3 > a > span")
+    WebElement messageInBasket;
+
+
+
 
 //    @FindBy(css="div.container.footer-container  div.col-md-3.col-sm-4.rwd-footer:nth-child(3) ul>li:nth-child(1)")
 //    WebElement reklamacjeOnFooterSectionPomocLink;
@@ -581,6 +606,53 @@ public class MainPage extends FundamentalTest {
 
                 return flag;
             }
+
+
+
+            public boolean logoIsDisplay(){
+               return wait.until((visibilityOf(logo))).isDisplayed();
+            }
+
+
+            public String getPageTitleAfterClickedOnLogo(){
+
+                wait.until(visibilityOf(logo)).click();
+                return driver.getTitle();
+            }
+
+
+            public String getPhoneNumerFromHeader(){
+
+                return wait.until(visibilityOf(phoneNumberInHeader)).getText();
+            }
+
+            public String getEmailFromHeader(){
+
+                return wait.until(visibilityOf(emailInHeader)).getText();
+            }
+
+            public int getNumberProductsFromBasket(){
+                return parseInt(wait.until(visibilityOf(numberProductsInBasket)).getText());
+            }
+
+            public String getAmountFromBasket(){
+
+                return wait.until(visibilityOf(amountInBasket)).getText();
+            }
+
+
+            public String getCurrencyFromBasket(){
+
+                return wait.until(visibilityOf(currencyInBasket)).getText();
+            }
+
+
+            public String getMessageFromBasket(){
+
+                return wait.until(visibilityOf(messageInBasket)).getText();
+            }
+
+
 }
 
 
